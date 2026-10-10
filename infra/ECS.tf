@@ -38,7 +38,7 @@ resource "aws_ecs_task_definition" "serverless2-API" {
         "environment" = [
           {
             "name"  = "STRING_CONEXAO_DB"
-            "value" = "mongodb://alura:admin123@${aws_docdb_cluster_instance.serverless2_app.endpoint}:${aws_docdb_cluster_instance.serverless2_app.port}/?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"
+            "value" = var.string_conexao_db
           }
         ]
         "portMappings" = [

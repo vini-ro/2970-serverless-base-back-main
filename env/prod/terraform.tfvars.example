@@ -1,0 +1,3 @@
+# Copie para terraform.tfvars (já ignorado pelo Git) e preencha.
+string_conexao_db = "mongodb://USUARIO:SENHA@HOST:27017/?tls=true"
+senha_db = "TROQUE-POR-UMA-SENHA-FORTE"

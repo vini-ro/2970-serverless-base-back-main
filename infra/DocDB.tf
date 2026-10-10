@@ -1,7 +1,7 @@
 resource "aws_docdb_cluster" "docdb" {
   cluster_identifier      = "docdb-cluster-serverless2"
   master_username         = "alura"
-  master_password         = "admin123"
+  master_password         = var.senha_db
   preferred_backup_window = "07:00-09:00"
   skip_final_snapshot     = true
   apply_immediately       = true
